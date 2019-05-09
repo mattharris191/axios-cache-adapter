@@ -3292,7 +3292,7 @@ function _response() {
           case 0:
             _res$request = res.request, request = _res$request === void 0 ? {} : _res$request, _res$headers = res.headers, headers = _res$headers === void 0 ? {} : _res$headers; // exclude binary response from cache
 
-            if (!(['arraybuffer', 'blob'].indexOf(request.responseType) > -1)) {
+            if (!(['arraybuffer'].indexOf(request.responseType) > -1)) {
               _context.next = 3;
               break;
             }
