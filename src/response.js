@@ -6,7 +6,7 @@ async function response (config, req, res) {
   const { request = {}, headers = {} } = res
 
   // exclude binary response from cache
-  if (['arraybuffer', 'blob'].indexOf(request.responseType) > -1) {
+  if (['arraybuffer'].indexOf(request.responseType) > -1) {
     return res
   }
 
